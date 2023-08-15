@@ -1,107 +1,35 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Inter";
-}
-
-ul {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-    font-size: 0;
-}
-
-.heading-1 {
-    color: #323b4b;
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 73px;
-}
-
-.heading-2 {
-    color: #323b4b;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 58px;
-}
-
-.heading-3 {
-    color: #323b4b;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 34px;
-}
-
-.heading-4 {
-    color: #323b4b;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 29px;
-}
-
-.text-lg {
-    color: #8a94a6;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 35px;
-}
-
-.text-md {
-    color: #8a94a6;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 30px;
-}
-
-.btn {
-    border: none;
-    cursor: pointer;
-    height: 45px;
-    font-size: 18px;
-    border-radius: 10px;
-    padding-left: 33px;
-    padding-right: 33px;
-    color: #ffffff;
-    background-color: #377dff;
-}
-
 /* Header */
 
-.navigation {
-    padding: 38px 100px;
-    position: relative;
+#header {
+    padding: 40px 100px;
 }
 
 .logo {
-    height: 54px;
-    width: auto;
-}
-
-.navigation__actions {
-    position: absolute;
-    top: 42.5px;
-    right: 100px;
-}
-
-.navigation__links {
+    height: auto;
+    width: 182px;
     display: inline-block;
     vertical-align: middle;
 }
 
+.navigation {
+    width: calc(100% - 182px);
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.navigation__links {
+    display: inline-block;
+    /* vertical-align: middle; */
+    margin-right: 50px;
+}
+
 .navigation__links li {
     display: inline-block;
-    margin-right: 56px;
+}
+
+.navigation__links li:not(:last-child) {
+    margin-right: 50px;
 }
 
 .navigation__links a {
@@ -120,19 +48,16 @@ a {
 
 #hero-section {
     background: #fafbfc;
-}
-
-.hero-section {
     padding: 120px 100px;
 }
 
-.hero-section h1 {
+#hero-section h1 {
     text-align: center;
     margin-bottom: 35px;
 }
 
-.hero-section .text-lg {
-    width: 60%;
+#hero-section .text-lg {
+    width: 65%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 56px;
@@ -181,22 +106,22 @@ a {
 
 /* Form Section */
 
-.form-section {
+#form-section {
     padding: 120px 100px;
 }
 
-.form-section h2 {
+#form-section h2 {
     text-align: center;
     margin-bottom: 28px;
 }
 
-.form-section p {
+#form-section p {
     text-align: center;
     margin-bottom: 52px;
 }
 
 .form__content {
-    width: 66%;
+    width: 65%;
     margin: 0 auto;
 }
 
@@ -211,8 +136,9 @@ a {
     width: calc((100% - 33px) / 2);
     height: 66px;
     padding-left: 25px;
+    padding-right: 25px;
     border-radius: 10px;
-    border: 2px solid #fafbfc;
+    border: 2px solid #b0b7c3;
 }
 
 .input:first-child,
@@ -230,7 +156,7 @@ a {
 #textareaHelp {
     resize: none;
     border-radius: 10px;
-    border: 2px solid #fafbfc;
+    border: 2px solid #b0b7c3;
     background: #fff;
     width: 100%;
     height: 296px;
@@ -256,13 +182,17 @@ a {
 .inputs-row label {
     display: inline-block;
     vertical-align: middle;
-    width: calc((100% - 20%) / 2 * 1.25);
-    margin-right: 20%;
+    width: calc(100% - 286px);
+    text-align: left;
     color: #8a94a6;
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
     cursor: pointer;
+}
+
+.inputs-row:last-child {
+    text-align: right;
 }
 
 #submitInput {
@@ -271,7 +201,7 @@ a {
     vertical-align: middle;
     border-radius: 10px;
     background: #377dff;
-    width: calc((100% - 20%) / 2 * 0.75);
+    width: 286px;
     height: 66px;
     /* text */
     color: #fff;
@@ -282,16 +212,16 @@ a {
 
 /* Footer Section */
 
-.footer-section {
+#footer {
     padding: 120px 100px;
 }
 
-.footer-section a {
+#footer a {
     display: block;
     margin-bottom: 16px;
 }
 
-.footer-section p {
+#footer p {
     line-height: 45px;
 }
 
@@ -312,7 +242,7 @@ a {
 }
 
 .footer__social-icons img:not(:last-child) {
-    padding-right: 20px;
+    margin-right: 20px;
 }
 
 .footer-section .heading-4 {
