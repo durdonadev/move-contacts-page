@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-family: "Inter";
 }
@@ -19,61 +23,61 @@ a {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 144rem;
     margin: 0 auto;
     font-size: 0;
 }
 
 .heading-1 {
     color: #323b4b;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 700;
-    line-height: 73px;
+    line-height: 7.3rem;
 }
 
 .heading-2 {
     color: #323b4b;
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 700;
-    line-height: 58px;
+    line-height: 5.8rem;
 }
 
 .heading-3 {
     color: #323b4b;
-    font-size: 28px;
+    font-size: 2.8rem;
     font-weight: 700;
-    line-height: 34px;
+    line-height: 3.4rem;
 }
 
 .heading-4 {
     color: #323b4b;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 600;
-    line-height: 29px;
+    line-height: 2.9rem;
 }
 
 .text-lg {
     color: #8a94a6;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 500;
-    line-height: 35px;
+    line-height: 3.5rem;
 }
 
 .text-md {
     color: #8a94a6;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 3rem;
 }
 
 .btn {
     border: none;
     cursor: pointer;
-    height: 45px;
-    font-size: 18px;
-    border-radius: 10px;
-    padding-left: 33px;
-    padding-right: 33px;
+    height: 4.5rem;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    padding-left: 3.3rem;
+    padding-right: 3.3rem;
     color: #ffffff;
     background-color: #377dff;
 }

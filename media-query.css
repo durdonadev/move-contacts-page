@@ -1,0 +1,151 @@
+@media (max-width: 1100px) {
+    html {
+        font-size: 50%; /* 1 rem is 8px */
+    }
+
+    #header,
+    #hero-section,
+    #form-section,
+    #footer {
+        padding-left: 7.5rem;
+        padding-right: 7.5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    #hero-section,
+    #form-section,
+    #footer {
+        padding-top: 7.5rem;
+        padding-bottom: 7.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    #header,
+    #hero-section,
+    #form-section,
+    #footer {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .footer__brand {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .footer__links {
+        width: calc((100% - 27rem) / 4);
+    }
+}
+
+@media (max-width: 800px) {
+    #hero-section .text-lg,
+    .form__content {
+        width: 80%;
+    }
+
+    .contact {
+        width: calc((100% - 3.2rem) / 2);
+    }
+
+    .contact:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .contact:first-child {
+        margin-bottom: 3.2rem;
+    }
+
+    .contact:last-child {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    #header {
+        padding: 2.5rem 3.5rem;
+    }
+
+    #hero-section,
+    #form-section,
+    #footer {
+        padding: 4rem 3.5rem;
+    }
+
+    .logo {
+        width: 15rem;
+    }
+
+    .heading-1 {
+        font-size: 5rem;
+    }
+
+    #form-section {
+        border-bottom: 0.1rem solid hsl(219, 14%, 90%);
+    }
+
+    .contact {
+        width: 100%;
+        display: block;
+        margin-right: 0;
+    }
+
+    .contact:nth-child(2) {
+        margin-bottom: 3.2rem;
+    }
+
+    .form__content {
+        width: 100%;
+    }
+
+    .input::placeholder,
+    #textareaHelp::placeholder {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    #submitInput {
+        display: block;
+        width: 100%;
+    }
+
+    .submitInput-wrapper label {
+        width: 100%;
+        margin-bottom: 3.2rem;
+    }
+
+    .submitInput-wrapper {
+        text-align: left;
+    }
+
+    .footer__links {
+        width: calc((100% - 9rem) / 2);
+        margin-bottom: 3.2rem;
+    }
+
+    .footer__links:nth-child(3) {
+        margin-right: 0;
+    }
+
+    .footer__links .text-lg {
+        font-size: 1.6rem;
+        margin-bottom: 0;
+    }
+
+    .footer__links .heading-4 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #footer a {
+        margin-bottom: 0;
+    }
+}
